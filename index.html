@@ -77,5 +77,25 @@ that results have not been altered or tampered with.
     <li>Builders who require reproducibility and proof</li>
 </ul>
 
+<section id="trust">
+  <h2>Download Integrity Verification</h2>
+  <p>
+    GridAI publishes cryptographic hashes for all distributed files.
+    Users can independently verify file integrity before execution.
+  </p>
+
+  <h3>gridai-trust-demo.txt</h3>
+  <pre>
+SHA-256: 6F6F9E0182E79F8C510C155397BD921C0DD31A7033E2B06415A81EC4CDD83B1F
+  </pre>
+
+  <p>
+    To verify on Windows:
+  </p>
+  <pre>
+Get-FileHash gridai-trust-demo.txt -Algorithm SHA256
+  </pre>
+</section>
+
 </body>
 </html>
