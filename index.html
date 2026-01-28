@@ -139,6 +139,34 @@ rather than replacing them.
   </p>
 </section>
 
+<section>
+  <h2>Verify a Demo Download</h2>
+  <p>
+    This demo includes a downloadable artifact with a published cryptographic
+    hash so that integrity can be independently verified.
+  </p>
+
+  <ol>
+    <li>
+      Download the demo file from the link above.
+    </li>
+    <li>
+      Open PowerShell and navigate to the download folder.
+    </li>
+    <li>
+      Run the following command:
+      <pre><code>Get-FileHash gridai-trust-demo.txt -Algorithm SHA256</code></pre>
+    </li>
+    <li>
+      Confirm the output hash matches the value published on this page.
+    </li>
+  </ol>
+
+  <p>
+    If the hashes match, the file has not been altered.
+  </p>
+</section>
+
 <h2>Trust by Design</h2>
 <p>
 Every GridAI run produces a sealed audit bundle containing inputs,
